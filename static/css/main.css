@@ -278,6 +278,8 @@ li {
         background: #300625;
         border-color: #300625; }
 
+.not-allowed {cursor: not-allowed;}
+
 @media only screen and (min-width: 45em) {
   body > header {
     -webkit-transition: height ease 0.5s, background ease-in-out 0.5s;
