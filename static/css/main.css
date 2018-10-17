@@ -339,9 +339,10 @@ li {
     min-height: 300px;
     padding-top: 3em; }
     section .section-title {
+      font-family: "Rubik Mono One", "Helvetica Neue", Helvetica, Arial, sans-serif;
       column-span: all;
       font-weight: 100;
-      font-size: .9em;
+      font-size: 1.3em;
       letter-spacing: 1px;
       text-transform: uppercase;
       margin-bottom: 2.5em; }
@@ -455,9 +456,13 @@ li {
     border: 0;
     border-bottom: 1px solid rgba(98, 98, 232, 0.5); }
   .sponsors {
-    margin-left: -5vw;
+    #margin-left: -5vw;
     padding: 3em 5vw 5em;
-    width: 105vw; }
+    #width: 105vw;
+    background-image: url(../img/trangle-white-bg.png), url(../img/trangle-white-bg.png) !important;
+    background-position: 0 0, 0 bottom !important;
+    background-repeat: repeat-x, repeat-x !important;
+    }
     .sponsors .sponsor-grid {
       margin-top: 3em; }
       .sponsors .sponsor-grid li {
