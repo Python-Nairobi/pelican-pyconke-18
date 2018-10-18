@@ -387,6 +387,28 @@ li {
           .purchase-block .ticket-categories li:hover .button,
           .purchase-block .ticket-categories li .active .button {
             opacity: 1; }
+    .countdown {
+      border-bottom: 1px solid #6262E8;
+      padding-bottom: .8em;
+    }
+   .countdown div {
+     text-align: center;
+     font-size: .8em
+   }
+   .countdown div span {
+     font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 900 !important;
+     font-size: 3em !important;
+     color: #6262E8;
+   }
+   .location_date h2 .date {
+    font-weight: 900;
+    font-size: 1.3em !important;
+   }
+   .location_date h2 em {
+     color: #6262E8;
+     float: right;
+   }
   .topics h3 {
     color: #FFF;
     font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -459,19 +481,18 @@ li {
     border: 0;
     border-bottom: 1px solid rgba(98, 98, 232, 0.5); }
   .sponsors {
-    /* margin-left: -5vw; */
-    padding: 3em 5vw 5em;
-    /* width: 105vw; */
+    padding: 3em 0 5em;
     background-image: url(../img/trangle-white-bg.png), url(../img/trangle-white-bg.png) !important;
     background-position: 0 0, 0 bottom !important;
     background-repeat: repeat-x, repeat-x !important;
-    text-align: center;
     background-color: #fff;
     }
     .sponsors, .sponsors .section-title {
-      color: #000;
-    }
+      color: #000; }
+    .sponsors .section-title {
+      margin-left: 2vw; }
     .sponsors .sponsor-grid {
+      text-align: center;
       margin-top: 3em; }
       .sponsors .sponsor-grid li {
         display: inline-block;
