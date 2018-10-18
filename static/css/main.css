@@ -345,7 +345,7 @@ li {
       font-size: 1.3em;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 2.5em; }
+      margin-bottom: 1em; }
     section h3 {
       text-transform: uppercase; }
   .info-texture {
@@ -390,7 +390,7 @@ li {
   .topics h3 {
     color: #FFF;
     font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.125em; }
+    font-size: 1.5em; }
   .topics .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -398,7 +398,7 @@ li {
   .topics article {
     padding: .25em 1em .25em 0; }
     .topics article p {
-      font-size: .9em; }
+      font-size: 1em; }
   .description-block {
     font-size: 1.5em;
     display: grid;
@@ -445,9 +445,12 @@ li {
       width: 30%; }
   .get-involved-grid {
     grid-template-columns: repeat(4, 1fr); }
+    .get-involved-grid .card-bottom {
+      min-height: 270px; }
     .get-involved-grid h3 {
       color: #2D2546;
-      font-family: "Rubik Mono One", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-size: 1.5em;
+      font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     .get-involved-grid p {
       color: #2D2546; }
   hr {
@@ -456,12 +459,17 @@ li {
     border: 0;
     border-bottom: 1px solid rgba(98, 98, 232, 0.5); }
   .sponsors {
-    #margin-left: -5vw;
+    /* margin-left: -5vw; */
     padding: 3em 5vw 5em;
-    #width: 105vw;
+    /* width: 105vw; */
     background-image: url(../img/trangle-white-bg.png), url(../img/trangle-white-bg.png) !important;
     background-position: 0 0, 0 bottom !important;
     background-repeat: repeat-x, repeat-x !important;
+    text-align: center;
+    background-color: #fff;
+    }
+    .sponsors, .sponsors .section-title {
+      color: #000;
     }
     .sponsors .sponsor-grid {
       margin-top: 3em; }
@@ -469,19 +477,18 @@ li {
         display: inline-block;
         margin-right: 2.5em; }
       .sponsors .sponsor-grid img {
-        height: 4em; }
+        height: 5em; }
   footer {
     background: #6060e8;
     display: grid;
     grid-template-columns: 52% 40%;
     grid-column-gap: 2em;
     margin-top: 2em;
-    margin-bottom: 1em;
-    padding: 2em 5vw; }
+    padding: 1em 5vw 5em; }
     footer h3 {
       color: #FFF;
-      font-family: "Rubik Mono One", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 1.125em; }
+      font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.25em; }
     footer form input {
       font-size: .8em;
       background: none;
@@ -511,6 +518,9 @@ li {
     letter-spacing: 1px;
     text-transform: uppercase; }
   footer .social-links a {
+    text-decoration: none;
     margin-right: 1.5em; }
   footer .social-links a img {
-    height: 32px; } }
+    height: 32px; }
+  footer .social-links a img path {
+    fill: #303030; } }

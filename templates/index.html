@@ -24,6 +24,7 @@
             </p>
         </article>
         <ol class="ticket-categories">
+            {% for description, price, link in TICKET_CATEGORIES %}
             <li>
                 <h3>Regular</h3>
                 <p class="price">KES 500</p>
@@ -39,6 +40,7 @@
                 <p class="price">KES 3,000</p>
                 <a class="button">Get Tickets</a>
             </li>
+            {% endfor %}
         </ol>
     </section>
     <section class="topics">
@@ -63,26 +65,50 @@
         </div>
     </section>
     <hr>
-    <section class="sponsors" style="background:#FFF">
-        <h2 class="section-title" style="color:#000">POWERED BY...</h2>
+    <section class="sponsors">
+        <h2 class="section-title">POWERED BY...</h2>
         <ul class="sponsor-grid">
             <li>
-                <img src="{{ SITE_URL }}/theme/img/google.svg" alt="Google logo" />
+                <img src="{{ SITE_URL }}/theme/img/sponsors/google.svg" alt="Google Logo" />
             </li>
             <li>
-                <img src="{{ SITE_URL }}/theme/img/microsoft.svg" alt="Microsoft logo" />
+                <img src="{{ SITE_URL }}/theme/img/sponsors/microsoft.svg" alt="Microsoft Logo" />
+            </li>
+            <!-- <li>
+                <img src="{{ SITE_URL }}/theme/img/sponsors/usiu.svg" alt="USIU Logo" />
+            </li> -->
+            <li>
+                <img src="{{ SITE_URL }}/theme/img/sponsors/jumo.svg" alt="Jumo Logo" />
+            </li>
+            <li>
+                <img src="{{ SITE_URL }}/theme/img/sponsors/psf.svg" alt="Python Software Foundation Logo">
+            </li>
+            <li>
+                <img src="{{ SITE_URL }}/theme/img/sponsors/africastalking.svg" alt="Africa's Talking Logo" />
+            </li>
+        </ul>
+    </section>
+    <section class="get-involved">
+        <h2 class="section-title">Get Involved</h2>
+        <ul class="get-involved-grid">
+            <li>
+                <div class="card-bottom">
+                    <h3>Apply to <br>volunteer</h3>
+                    <hr>
+                    <p>Extra hands are always welcome!</p>
+                </div>
             </li>
             <!--li>
                 <img src="{{ SITE_URL }}/theme/img/strath.svg" alt="Strathmore Uni logo" />
             </li-->
             <li>
-                <img src="{{ SITE_URL }}/theme/img/jumo.svg" alt="PSF logo">
+                <img src="{{ SITE_URL }}/theme/img/sponsors/jumo.svg" alt="JUMO logo">
             </li>
             <li>
-                <img src="{{ SITE_URL }}/theme/img/psf.svg" alt="PSF logo">
+                <img src="{{ SITE_URL }}/theme/img/sponsors/psf.svg" alt="Python Software Foundation logo">
             </li>
             <li>
-                <img src="{{ SITE_URL }}/theme/img/africastalking.svg" alt="Africa's Talking logo" />
+                <img src="{{ SITE_URL }}/theme/img/sponsors/africastalking.svg" alt="Africa's Talking logo" />
             </li>
         </ul>
     </section>
