@@ -278,6 +278,8 @@ li {
         background: #300625;
         border-color: #300625; }
 
+.not-allowed {cursor: not-allowed;}
+
 @media only screen and (min-width: 45em) {
   body > header {
     -webkit-transition: height ease 0.5s, background ease-in-out 0.5s;
@@ -337,9 +339,10 @@ li {
     min-height: 300px;
     padding-top: 3em; }
     section .section-title {
+      font-family: "Rubik Mono One", "Helvetica Neue", Helvetica, Arial, sans-serif;
       column-span: all;
       font-weight: 100;
-      font-size: 1.5em;
+      font-size: 1.3em;
       letter-spacing: 1px;
       text-transform: uppercase;
       margin-bottom: 1em; }
@@ -456,12 +459,20 @@ li {
     border: 0;
     border-bottom: 1px solid rgba(98, 98, 232, 0.5); }
   .sponsors {
-    text-align: center;
-    color: #000;
-    background-color: #fff;
-    margin-left: -5vw;
+    /* margin-left: -5vw; */
     padding: 3em 5vw 5em;
-    width: 105vw; }
+    /* width: 105vw; */
+    background-image: url(../img/trangle-white-bg.png), url(../img/trangle-white-bg.png) !important;
+    background-position: 0 0, 0 bottom !important;
+    background-repeat: repeat-x, repeat-x !important;
+    text-align: center;
+    background-color: #fff;
+    }
+    .sponsors, .sponsors .section-title {
+      color: #000;
+    }
+    .sponsors .sponsor-grid {
+      margin-top: 3em; }
       .sponsors .sponsor-grid li {
         display: inline-block;
         margin-right: 2.5em; }

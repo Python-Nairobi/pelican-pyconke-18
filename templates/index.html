@@ -12,24 +12,33 @@
             </h1>
         </article>
         <article>
-            <h2>25 &mdash; 26 Oct. 2018 <em>@USIU-Africa</em></h2>
+            <h2>25 &mdash; 26 Oct. 2018 <!--em>@USIU-Africa</em --></h2>
         </article>
     </section>
 
     <section class="purchase-block">
         <article>
             <h3>Be part of a tech movement</h3>
-            <p>The first convention in Kenya bringing together techies,
-                business people, startups, learning institutions, students
-                and other organizations or individuals with an interest in
-                the Python programming language and its ecosystem.</p>
+            <p>
+              The second annual gathering of individuals &amp; organizations interested n the Python programming language and its ecosystem this side of the sahara.
+            </p>
         </article>
         <ol class="ticket-categories">
             {% for description, price, link in TICKET_CATEGORIES %}
             <li>
-                <h3>{{ description|replace('_',' ')|title }}</h3>
-                <p class="price">KES {{ price }}</p>
-                <a href="{{ link }}" class="button" target="_blank">Get Tickets</a>
+                <h3>Regular</h3>
+                <p class="price">KES 500</p>
+                <a href="https://mookh.com/item-details/e856d1c5-7b0a-48e0-8aea-101fda06193e" class="button">Get Tickets</a>
+            </li>
+            <li class="not-allowed">
+                <h3>Late Pass</h3>
+                <p class="price">KES 1,500</p>
+                <a class="button">Get Tickets</a>
+            </li>
+            <li class="not-allowed">
+                <h3>Corporate</h3>
+                <p class="price">KES 3,000</p>
+                <a class="button">Get Tickets</a>
             </li>
             {% endfor %}
         </ol>
@@ -57,7 +66,7 @@
     </section>
     <hr>
     <section class="sponsors">
-        <h2 class="section-title">Sponsors</h2>
+        <h2 class="section-title">POWERED BY...</h2>
         <ul class="sponsor-grid">
             <li>
                 <img src="{{ SITE_URL }}/theme/img/sponsors/google.svg" alt="Google Logo" />
@@ -65,15 +74,15 @@
             <li>
                 <img src="{{ SITE_URL }}/theme/img/sponsors/microsoft.svg" alt="Microsoft Logo" />
             </li>
-            <li>
+            <!-- <li>
                 <img src="{{ SITE_URL }}/theme/img/sponsors/usiu.svg" alt="USIU Logo" />
-            </li>
+            </li> -->
             <li>
                 <img src="{{ SITE_URL }}/theme/img/sponsors/jumo.svg" alt="Jumo Logo" />
             </li>
-            <!-- <li>
+            <li>
                 <img src="{{ SITE_URL }}/theme/img/sponsors/psf.svg" alt="Python Software Foundation Logo">
-            </li> -->
+            </li>
             <li>
                 <img src="{{ SITE_URL }}/theme/img/sponsors/africastalking.svg" alt="Africa's Talking Logo" />
             </li>
@@ -89,26 +98,17 @@
                     <p>Extra hands are always welcome!</p>
                 </div>
             </li>
+            <!--li>
+                <img src="{{ SITE_URL }}/theme/img/strath.svg" alt="Strathmore Uni logo" />
+            </li-->
             <li>
-                <div class="card-bottom">
-                    <h3>Apply to <br>be a speaker</h3>
-                    <hr>
-                    <p>We are always looking out for people with fresh ideas</p>
-                </div>
+                <img src="{{ SITE_URL }}/theme/img/sponsors/jumo.svg" alt="JUMO logo">
             </li>
             <li>
-                <div class="card-bottom">
-                    <h3>Submit a <br>proposal</h3>
-                    <hr>
-                    <p>We are always looking out for people with fresh ideas</p>
-                </div>
+                <img src="{{ SITE_URL }}/theme/img/sponsors/psf.svg" alt="Python Software Foundation logo">
             </li>
             <li>
-                <div class="card-bottom">
-                    <h3>Become a <br>sponsor</h3>
-                    <hr>
-                    <p>We are always looking out for people with fresh ideas</p>
-                </div>
+                <img src="{{ SITE_URL }}/theme/img/sponsors/africastalking.svg" alt="Africa's Talking logo" />
             </li>
         </ul>
     </section>
