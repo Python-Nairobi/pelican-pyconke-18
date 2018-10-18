@@ -83,19 +83,23 @@
 
     <!-- Footer -->
     <footer>
-        {% block footerleft %}
-        {% endblock footerleft %}
-        {% if SOCIAL %}
-        <nav class="social-links">
-            <h3>Connect on social media</h3>
-            <p>Engage through our social media accounts</p>
-            {% for name, link in SOCIAL %}
-            <a href="{{ link }}" class="{{ name|lower|replace('+','-plus') }}" target="_blank">
-                <img src="{{ SITE_URL }}/theme/img/social_icons/v2/{{ name|lower|replace('+','-plus') }}.svg">
-            </a>
-            {% endfor %}
-        </nav>
-        {% endif %}
+        <article class="footer-block">
+            <div class="col-1-2">
+                {% block footerleft %}
+                {% endblock footerleft %}
+            </div>
+            {% if SOCIAL %}
+            <nav class="social-links col-1-2">
+                <h3>Connect on social media</h3>
+                <p>Engage through our social media accounts</p>
+                {% for name, link in SOCIAL %}
+                <a href="{{ link }}" class="{{ name|lower|replace('+','-plus') }}" target="_blank">
+                    <img src="{{ SITE_URL }}/theme/img/social_icons/v2/{{ name|lower|replace('+','-plus') }}.svg">
+                </a>
+                {% endfor %}
+            </nav>
+            {% endif %}
+        </article>
     </footer>
     <!-- /Footer -->
     {% block extra_js %}{% endblock extra_js %}
