@@ -553,4 +553,65 @@ li {
   footer .social-links a img {
     height: 32px; }
   footer .social-links a img path {
-    fill: #303030; } }
+    fill: #303030; } 
+  .schedule {
+    width: 90vw;
+    font-size: .9em;
+  }
+  .schedule thead {
+    border-top: 5px solid #5DC9D4;
+    border-bottom: 5px solid #5DC9D4;
+  }
+  .schedule .heading {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .schedule thead>tr,
+  .schedule .break {
+    color: #5DC9D4;
+  }
+  .schedule thead > tr {
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .schedule td, .schedule th {
+    padding: 1em 0;
+  }
+
+  .schedule tbody tr {
+    border-bottom: 1px solid #5DC9D4;
+  }
+
+  .schedule tbody td.time {
+    border-bottom: 5px solid #5DC9D4;
+    min-width: 200px;
+  }
+
+  .schedule thead .location,
+  .schedule .time,
+  .schedule .presenter,
+  .schedule .organisation {
+    color: #956FB7;
+  }
+  .schedule .title,
+  .schedule .presenter {
+    display: inline-block;
+    font-weight: bold
+  }
+
+  .schedule .organisation {
+    margin-left: 10px;
+    font-weight: normal !important;
+  }
+
+  .schedule .organisation::before {
+    content: '> '
+  }
+
+  .schedule .break {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  }
