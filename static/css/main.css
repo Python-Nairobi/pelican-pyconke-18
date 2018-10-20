@@ -602,7 +602,7 @@ li {
 
   .schedule .organisation {
     margin-left: 10px;
-    font-weight: normal !important;
+    font-weight: 100 !important;
   }
 
   .schedule .organisation::before {
