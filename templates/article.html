@@ -2,7 +2,7 @@
 
 {% block main %}
     <main class="wrapper">
-        <div class="content">
+        <div class="content {{ article.title.lower() }}">
             <h2 class="section-title">{{ article.title }}</h2>
             <article>
                 {{ article.content }}
