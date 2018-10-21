@@ -102,6 +102,16 @@
         </article>
     </footer>
     <!-- /Footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(".content.schedule .section-title").empty();
+        // slight tweak for the schedule
+        // after every vr element, wrap the text that follows in a div
+        // this will enable css formatting for the presenter section per talk
+        $(".table tr:not(:first-child)>td:not(:first-child)").contents().filter(function () {
+            return this.nodeType == 3 && $.trim($(this).text()) != '';
+        }).wrap('<div />');
+    </script>
     {% block extra_js %}{% endblock extra_js %}
 </body>
 
