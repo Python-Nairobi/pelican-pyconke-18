@@ -779,9 +779,20 @@ li {
   }
 
   .schedule table.table {
-    width: 90vw;
     font-size: .9em;
     margin-bottom: 6em;
+  }
+
+  .schedule {
+    background-image: url(../img/trangle-white-bg.png), url(../img/trangle-white-bg.png) !important;
+    background-position: 0 0, 0 bottom !important;
+    background-repeat: repeat-x, repeat-x !important;
+    background-color: #fff;
+    color: #303030;
+    padding: 3em 2em;
+    margin-top: 5em;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
   }
 
   .schedule table.table tr:first-child {
@@ -808,7 +819,6 @@ li {
 
   /* time */
   .schedule table.table tbody tr:not(:first-child)>td:first-child {
-    color: #956FB7;
     font-weight: bold;
     font-size: 1.5em;
     border-bottom: 5px solid #5DC9D4;
@@ -824,7 +834,12 @@ li {
     border-bottom: 1px solid #5DC9D4;
   }
 
+  .schedule table.table tbody tr:not(:first-child)>td:first-child,
   .schedule table.table tbody tr>td:not(:first-child) br~div {
-    color: #956FB7;
+    color: #9753D5;
+  }
+
+  .schedule table.table tbody tr:last-child td {
+    border-bottom: 3px solid #5DC9D4 !important;
   }
 }
