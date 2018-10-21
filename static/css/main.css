@@ -525,27 +525,31 @@ li {
 
   .countdown {
     border-bottom: 1px solid #6262E8;
-    padding-bottom: .8em;
   }
 
   .countdown div {
     text-align: center;
-    font-size: .8em
+    font-size: 1.2em
   }
 
   .countdown div span {
-    font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 900 !important;
-    font-size: 3em !important;
+    font-size: 2em !important;
     color: #6262E8;
   }
 
-  .location_date h2 .date {
-    font-weight: 900;
-    font-size: 1.3em !important;
+  .countdown,
+  .location_date {
+    width: 100%;
+    display: inline-block;
   }
 
-  .location_date h2 em {
+  h2 .location_date .date {
+    font-weight: 900;
+    font-size: 1.3em;
+  }
+
+  h2 .location_date em {
     color: #6262E8;
     float: right;
   }
